@@ -6,25 +6,25 @@ Run the Server
 npm install
 
 # Start development live-reload server
-PORT=8080 npm run dev
+npm run dev
 
 # Start production server:
-PORT=8080 npm start
+npm start
 ```
 
 Docker Support
 ------
 
 ```sh
-cd express-es6-rest-api
+cd backend
 
 # Build your docker
-docker build -t es6/api-service .
+docker build -t tagName .
 #            ^      ^           ^
 #          tag  tag name      Dockerfile location
 
 # run your docker
-docker run -p 8080:8080 es6/api-service
+docker run -p 8080:8080 containerTag
 #                 ^            ^
 #          bind the port    container tag
 #          to your host
